@@ -124,13 +124,13 @@ footer {
   }
   
   /* ซ่อนเมนูเมื่ออยู่บนหน้าจอเล็ก */
-  nav ul {
+nav ul {
     list-style-type: none;
     display: flex;
     gap: 15px;
-  }
+}
   
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .hamburger {
       display: block; /* แสดง Hamburger Icon */
     }
@@ -150,5 +150,5 @@ footer {
     nav ul.show {
       display: flex; /* แสดงเมนูเมื่อคลิก */
     }
-  }
+}
   
