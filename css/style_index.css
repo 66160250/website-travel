@@ -115,3 +115,40 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* สำหรับ Hamburger Icon */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  /* ซ่อนเมนูเมื่ออยู่บนหน้าจอเล็ก */
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block; /* แสดง Hamburger Icon */
+    }
+  
+    nav ul {
+      display: none; /* ซ่อนเมนู */
+      flex-direction: column;
+      background-color: #4CAF50;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+    }
+  
+    nav ul.show {
+      display: flex; /* แสดงเมนูเมื่อคลิก */
+    }
+  }
+  
