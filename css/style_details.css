@@ -23,6 +23,7 @@ header h1 {
     margin-bottom: 0.5rem;
 }
 
+/* Navigation */
 nav ul {
     list-style: none;
     display: flex;
@@ -102,7 +103,7 @@ button {
 }
 
 button:hover {
-    background: #5ac9c5;
+    background: #45a049;
 }
 
 /* Footer */
@@ -115,40 +116,3 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
-/* สำหรับ Hamburger Icon */
-.hamburger {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-  }
-  
-  /* ซ่อนเมนูเมื่ออยู่บนหน้าจอเล็ก */
-  nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 15px;
-  }
-  
-  @media (max-width: 768px) {
-    .hamburger {
-      display: block; /* แสดง Hamburger Icon */
-    }
-  
-    nav ul {
-      display: none; /* ซ่อนเมนู */
-      flex-direction: column;
-      background-color: #5ac9c5;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      width: 100%;
-      text-align: center;
-      padding: 10px 0;
-    }
-  
-    nav ul.show {
-      display: flex; /* แสดงเมนูเมื่อคลิก */
-    }
-  }
-  
